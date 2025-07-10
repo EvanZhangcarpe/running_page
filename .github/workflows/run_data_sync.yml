@@ -105,6 +105,11 @@ jobs:
         run: |
           python run_page/keep_sync.py ${{ secrets.KEEP_MOBILE }} ${{ secrets.KEEP_PASSWORD }} --with-gpx
 
+      - name: Run Keep to Strava backup sync    
+        if: env.RUN_TYPE == 'keep'    
+        run: |    
+          python run_page/keep_to_strava_sync.py ${{ secrets.KEEP_MOBILE }} ${{ secrets.KEEP_PASSWORD }} ${{ secrets.STRAVA_CLIENT_ID }} ${{ secrets.STRAVA_CLIENT_SECRET }} ${{ secrets.STRAVA_CLIENT_REFRESH_TOKEN }} --sync-types running cycling hiking
+          
       - name: Run sync Coros script
         if: env.RUN_TYPE == 'coros'
         run: |
