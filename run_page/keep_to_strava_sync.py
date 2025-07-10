@@ -139,6 +139,6 @@ if __name__ == "__main__":
         else:
             continue
 
-    run_strava_sync(
-        options.client_id, options.client_secret, options.strava_refresh_token
-    )
+#    run_strava_sync(
+#        options.client_id, options.client_secret, options.strava_refresh_token
+#    )
