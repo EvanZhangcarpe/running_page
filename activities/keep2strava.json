@@ -22,5 +22,11 @@
 "name": "Walk from keep",
 "type": "Walk",
 "gpx_file_path": "/home/runner/work/running_page/running_page/GPX_OUT/9223370285396136807.gpx"
+},
+{
+"run_id": 9223370284696333807,
+"name": "Run from keep",
+"type": "Run",
+"gpx_file_path": "/home/runner/work/running_page/running_page/GPX_OUT/9223370284696333807.gpx"
 }
 ]
